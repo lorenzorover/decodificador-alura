@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <!-- Menu ou Logotipo --> </header>
+    <main>
+        <h1>Desafio do decodificador de texto</h1>
+        <p class="paragrafo__inicial">Escreva uma palavra ou até mesmo uma frase, para assim poder ser <strong>codificada</strong> ou <strong>decodificada</strong>.</p>
+
+        <div class="container__painel__entrada">
+            <textarea type="text" name="campo__texto" class="" placeholder="Digite aqui..."></textarea>
+            <div class="container__botoes__iniciais">
+                <button onclick="criptografar()">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>
+                <button onclick="limparCampo()">Limpar Campo</button>
+            </div>
+        </div>
+
+        <div class="container__painel__saida">
+            <div class="container__saida__limpo">
+                <img src="pessoa-com-lupa.png" alt="Desenho de pessoa com lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="container__saida__mensagem">
+                <p class="mensagem__saida"></p>
+                <button onclick="copiarMensagem()" class="botao__copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer><!-- Rodapé --></footer>
+</body>
+</html>
