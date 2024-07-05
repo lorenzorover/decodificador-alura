@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* Altura da tela viewport (mantém o tamanho do conteúdo de acordo com o dispositivo) */
+    box-sizing: border-box; /* Mantém todo o conteúdo dentro do body*/
+    background-color: #F3F5FC;
+    flex-wrap: wrap; /* Muda o tamanho dos itens conforme o dimensionamento da tela */
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.paragrafo__inicial {
+    font-size: 26px;
+}
+
+textarea {
+    height: 680px;
+    width: 680px;
+    font-size: 32px;
+    background-color: transparent;
+    border: 0cm;
+}
+
+.container__mensagem__indicadora {
+    display: flex;
+}
+
+.container__saida {
+    box-sizing: border-box;
+    height: 944px;
+    width: 400px;
+    background-color: white;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*box-shadow: 5px 5px #e23;*/
+    padding: 32px;
+}
+
+.container__saida__limpo {
+    align-content: flex-end;
+}
+
+.container__saida__paragrafo {
+    text-align: center;
+    gap: 16px;
+}
+
+.aviso__nao__encontrado {
+    font-weight: bold;
+    font-size: 24px;
+    color: #343A40;
+}
+
+.paragrafo__mensagem {
+    font-size: 16px;
+    color: #495057;
+}
+
+button {
+    height: 67px;
+    width: 328px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 16px;
+    color: #0A3871;
+    background-color: transparent;
+}
+
+.container__botoes__iniciais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao__criptografar {
+    color: white;
+    background-color: #0A3871;
+}
