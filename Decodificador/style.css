@@ -26,22 +26,57 @@ p {
 
 h1 {
     font-size: 48px;
+    color: #0A3871;
+}
+
+.container__entrada {
+    display: flex;
+    flex-direction: column;
 }
 
 .paragrafo__inicial {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 textarea {
-    height: 680px;
+    height: max-content;
     width: 680px;
     font-size: 32px;
     background-color: transparent;
     border: 0cm;
+    color: #0A3871;
 }
 
 .container__mensagem__indicadora {
     display: flex;
+    margin: 16px;
+    align-items: center;
+}
+
+.mensagem__aviso {
+    color: #495057;
+    margin-left: 8px;
+}
+
+button {
+    border: 1px solid #0A3871;
+    height: 67px;
+    width: 328px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 16px;
+    color: #0A3871;
+    background-color: transparent;
+}
+
+.container__botoes__iniciais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao__criptografar {
+    color: white;
+    background-color: #0A3871;
 }
 
 .container__saida {
@@ -66,7 +101,7 @@ textarea {
     gap: 16px;
 }
 
-.aviso__nao__encontrado {
+.paragrafo__nao__encontrado {
     font-weight: bold;
     font-size: 24px;
     color: #343A40;
@@ -77,22 +112,6 @@ textarea {
     color: #495057;
 }
 
-button {
-    height: 67px;
-    width: 328px;
-    text-align: center;
-    border-radius: 24px;
-    font-size: 16px;
-    color: #0A3871;
-    background-color: transparent;
-}
-
-.container__botoes__iniciais {
-    display: flex;
-    justify-content: space-between;
-}
-
-.botao__criptografar {
-    color: white;
-    background-color: #0A3871;
+.container__saida__mensagem {
+    align-content: space-between;
 }
