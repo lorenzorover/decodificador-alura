@@ -12,7 +12,7 @@
     <main>
 
         <div class="container__entrada">
-            <h1>Decodificador de Texto</h1>
+            <h1 class="titulo">Decodificador de Texto</h1>
              <!-- <p class="paragrafo__inicial">Escreva uma palavra ou até mesmo uma frase, para assim poder ser <strong>codificada</strong> ou <strong>decodificada</strong>.</p> -->
             <textarea type="text" name="campo__texto" placeholder="Digite aqui..."></textarea>
             <div class="container__mensagem__indicadora">
@@ -27,19 +27,20 @@
         </div>
 
         <div class="container__saida">
-            <div class="container__saida__limpo">
+            <div id="saidaLimpo" class="container__saida__limpo">
                 <img src="./img/pessoa-com-lupa.png" alt="Desenho de pessoa com lupa" class="desenho__pessoa">
                 <div class="container__saida__paragrafo">
                     <p class="paragrafo__nao__encontrado">Nenhuma mensagem encontrada</p>
                     <p class="paragrafo__mensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
             </div>
-            <div class="container__saida__mensagem">
-                <p class="mensagem__saida"></p>
+            <div id="saidaMensagem" class="container__saida__mensagem">
+                <p id="mensagemConvertida" class="mensagem__saida"></p>
                 <button onclick="copiarMensagem()" class="botao__copiar">Copiar</button>
             </div>
         </div>
     </main>
-    <footer><!-- Rodapé --></footer>
+    <footer> Desenvolvido por Lorenzo Rover </footer>
+    <script src="app.js" defer></script>
 </body>
 </html>

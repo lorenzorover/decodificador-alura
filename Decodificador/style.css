@@ -19,12 +19,7 @@ main {
     justify-content: space-between;
 }
 
-p {
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-h1 {
+.titulo {
     font-size: 48px;
     color: #0A3871;
 }
@@ -32,6 +27,11 @@ h1 {
 .container__entrada {
     display: flex;
     flex-direction: column;
+}
+
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .paragrafo__inicial {
@@ -49,7 +49,7 @@ textarea {
 
 .container__mensagem__indicadora {
     display: flex;
-    margin: 16px;
+    margin-bottom: 16px;
     align-items: center;
 }
 
