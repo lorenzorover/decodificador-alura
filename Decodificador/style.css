@@ -19,19 +19,21 @@ main {
     justify-content: space-between;
 }
 
-.titulo {
-    font-size: 48px;
-    color: #0A3871;
-}
-
 .container__entrada {
     display: flex;
     flex-direction: column;
 }
 
-p {
-    margin-top: 16px;
-    margin-bottom: 16px;
+.titulo {
+    font-size: 48px;
+    color: #0A3871;
+}
+
+.container__entrada__conjunto {
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 80px;
+    margin-bottom: 32px;
 }
 
 .paragrafo__inicial {
@@ -39,23 +41,24 @@ p {
 }
 
 textarea {
-    height: max-content;
+    resize: none;
     width: 680px;
+    height: 664px;
     font-size: 32px;
     background-color: transparent;
-    border: 0cm;
+    outline: none;
+    border: none;
     color: #0A3871;
 }
 
-.container__mensagem__indicadora {
-    display: flex;
-    margin-bottom: 16px;
-    align-items: center;
-}
-
 .mensagem__aviso {
+    display: flex;
+    align-items: center;
     color: #495057;
-    margin-left: 8px;
+    gap: 8px;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 button {
@@ -72,6 +75,7 @@ button {
 .container__botoes__iniciais {
     display: flex;
     justify-content: space-between;
+    gap: 28px;
 }
 
 .botao__criptografar {
@@ -81,13 +85,13 @@ button {
 
 .container__saida {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 944px;
     width: 400px;
     background-color: white;
     border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     /*box-shadow: 5px 5px #e23;*/
     padding: 32px;
 }
@@ -101,15 +105,17 @@ button {
     gap: 16px;
 }
 
-.paragrafo__nao__encontrado {
+.mensagem__nao__encontrado {
     font-weight: bold;
     font-size: 24px;
     color: #343A40;
+    margin-top: 32px;
 }
 
 .paragrafo__mensagem {
     font-size: 16px;
     color: #495057;
+    margin-top: 16px;
 }
 
 .container__saida__mensagem {

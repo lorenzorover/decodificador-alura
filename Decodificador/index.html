@@ -10,19 +10,19 @@
 <body>
     <header> <!-- Menu ou Logotipo --> </header>
     <main>
-
         <div class="container__entrada">
             <h1 class="titulo">Decodificador de Texto</h1>
-             <!-- <p class="paragrafo__inicial">Escreva uma palavra ou até mesmo uma frase, para assim poder ser <strong>codificada</strong> ou <strong>decodificada</strong>.</p> -->
-            <textarea type="text" name="campo__texto" placeholder="Digite aqui..."></textarea>
-            <div class="container__mensagem__indicadora">
-                <img src="./img/circulo-exclamacao.png" alt="Círculo de exclamação alerta">
-                <p class="mensagem__aviso">Apenas letras minúsculas e sem acento.</p>
-            </div>
-            <div class="container__botoes__iniciais">
-                <button onclick="criptografar()" class="botao__criptografar">Criptografar</button>
-                <button onclick="descriptografar()" class="botao__descriptografar">Descriptografar</button>
-                <button onclick="limparCampo()" class="botao__limpar">Limpar Campo</button>
+            <div class="container__entrada__conjunto">
+                <textarea type="text" placeholder="Digite aqui..."></textarea>
+                <p class="mensagem__aviso">
+                    <img src="./img/circulo-exclamacao.png" alt="Círculo de exclamação alerta">
+                    Apenas letras minúsculas e sem acento.
+                </p>
+                <div class="container__botoes__iniciais">
+                    <button onclick="criptografar()" class="botao__criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="botao__descriptografar">Descriptografar</button>
+                <!--<button onclick="limparCampo()" class="botao__limpar">Limpar Campo</button>-->
+                </div>
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <div id="saidaLimpo" class="container__saida__limpo">
                 <img src="./img/pessoa-com-lupa.png" alt="Desenho de pessoa com lupa" class="desenho__pessoa">
                 <div class="container__saida__paragrafo">
-                    <p class="paragrafo__nao__encontrado">Nenhuma mensagem encontrada</p>
+                    <h2 class="mensagem__nao__encontrado">Nenhuma mensagem encontrada</h2>
                     <p class="paragrafo__mensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
             </div>

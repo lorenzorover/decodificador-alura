@@ -1,6 +1,8 @@
-document.getElementById("saidaLimpo").style.display = "none";
+document.getElementById("saidaMensagem").style.display = "none";
 
 function criptografar() {
+    mudarSaida();
+
     let mensagem = document.querySelector("textarea").value;
 
     mensagem = converterMensagem(mensagem, 'e', 'enter');
@@ -13,6 +15,8 @@ function criptografar() {
 }
 
 function descriptografar() {
+    mudarSaida();
+
     let mensagem = document.querySelector("textarea").value;
 
     mensagem = converterMensagem(mensagem, 'enter', 'e');
@@ -24,7 +28,7 @@ function descriptografar() {
     document.getElementById("mensagemConvertida").textContent = mensagem;
 }
 
-function textoConvertido() {
+function mudarSaida() {
     document.getElementById("saidaLimpo").style.display = "none";
     document.getElementById("saidaMensagem").style.display = "block"; // ou inline
 }
