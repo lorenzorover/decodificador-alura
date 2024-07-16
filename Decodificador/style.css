@@ -57,8 +57,7 @@ textarea {
     color: #495057;
     gap: 8px;
     font-size: 12px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0;
 }
 
 button {
@@ -92,7 +91,7 @@ button {
     width: 400px;
     background-color: white;
     border-radius: 32px;
-    /*box-shadow: 5px 5px #e23;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 32px;
 }
 

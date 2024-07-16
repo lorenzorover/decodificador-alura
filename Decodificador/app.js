@@ -1,9 +1,7 @@
-document.getElementById("saidaMensagem").style.display = "none";
+mostrarInicio();
 
 function criptografar() {
-    mudarSaida();
-
-    let mensagem = document.querySelector("textarea").value;
+    let mensagem = conferirMensagem();
 
     mensagem = converterMensagem(mensagem, 'e', 'enter');
     mensagem = converterMensagem(mensagem, 'i', 'imes');
@@ -15,9 +13,7 @@ function criptografar() {
 }
 
 function descriptografar() {
-    mudarSaida();
-
-    let mensagem = document.querySelector("textarea").value;
+    let mensagem = conferirMensagem();
 
     mensagem = converterMensagem(mensagem, 'enter', 'e');
     mensagem = converterMensagem(mensagem, 'imes', 'i');
@@ -28,9 +24,9 @@ function descriptografar() {
     document.getElementById("mensagemConvertida").textContent = mensagem;
 }
 
-function mudarSaida() {
+function mostrarCriptografia() {
     document.getElementById("saidaLimpo").style.display = "none";
-    document.getElementById("saidaMensagem").style.display = "block"; // ou inline
+    document.getElementById("saidaMensagem").style.display = "block";
 }
 
 function copiarMensagem() {
@@ -43,7 +39,7 @@ function copiarMensagem() {
       });
 }
 
-function limparCampo() {
+function mostrarInicio() {
     document.getElementById("mensagemConvertida").textContent = "";
 
     document.getElementById("saidaMensagem").style.display = "none";
@@ -55,4 +51,15 @@ function converterMensagem(mensagem, letra, novaLetra) {
     mensagem = mensagem.replace(new RegExp(letra, 'g'), novaLetra);
 
     return mensagem;
+}
+
+function conferirMensagem() {
+    let mensagem = document.querySelector("textarea").value;
+    if (mensagem.trim() === "") { /* trim remove o espaço da mensagem apenas durante o if*/
+        mostrarInicio();
+    } else {
+        mostrarCriptografia();
+        return mensagem;
+    }
+    return null;
 }
