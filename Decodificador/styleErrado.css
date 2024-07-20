@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --fonte-principal: "Inter", sans-serif;
+    --cor-principal: #0A3871;
+    --cor-paragrafo-saida: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* Altura da tela viewport (mantém o tamanho do conteúdo de acordo com o dispositivo) */
+    box-sizing: border-box; /* Mantém todo o conteúdo dentro do body*/
+    background-color: #F3F5FC;
+    flex-wrap: wrap; /* Muda o tamanho dos itens conforme o dimensionamento da tela */
+    font-family: var(--fonte-principal);
+}
+
+main {
+    padding: 3%;
+    display: flex;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+
+.container__entrada {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: var(--cor-principal);
+}
+
+.container__entrada__conjunto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 80px;
+    margin-bottom: 32px;
+    width: auto;
+    height: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    background-color: transparent;
+    outline: none;
+    /* border: none; */
+    color: var(--cor-principal);
+}
+
+.mensagem__aviso {
+    display: flex;
+    align-items: center;
+    color: #495057;
+    gap: 8px;
+    font-size: 0.75rem;
+    margin: 16px 0;
+}
+
+button {
+    border: 1px solid var(--cor-principal);
+    height: 67px;
+    width: 328px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: var(--cor-principal);
+    background-color: transparent;
+}
+
+.container__botoes__iniciais {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 28px;
+}
+
+.botao__criptografar {
+    color: white;
+    background-color: var(--cor-principal);
+}
+
+.container__saida {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+}
+
+.container__saida__limpo {
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.desenho__pessoa {
+    max-width: 100%;
+    height: auto;
+}
+
+.mensagem__nao__encontrado {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #343A40;
+    margin-top: 32px;
+}
+
+.paragrafo__mensagem {
+    font-size: 1rem;
+    color: var(--cor-paragrafo-saida);
+    margin-top: 16px;
+}
+
+.container__saida__mensagem {
+    height: 100%;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.mensagem__saida {
+    height: 88%;
+    font-size: 1.5rem;
+    color: var(--cor-paragrafo-saida);
+    margin-bottom: 32px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.botao__copiar {
+    /* margin-top: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    min-height: 67px;
+
+}
