@@ -1,5 +1,5 @@
 # Decodificador de texto
-Decodificador de texto (Desafio 01) feito durante o curso Alura-One.
+Decodificador de texto (Desafio 01) desenvolvido durante o curso Alura-One - 1 Fase.
 <br><br>
 
 ## 🛠️ Funcionalidades
@@ -26,7 +26,7 @@ O programa também possui um botão extra chamado "Copiar", que tem como funçã
 https://lorenzorover.github.io/decodificador-alura/
 <br><br>
 
-## ▶️ Vídeo demonstrativo da utilização
+## ▶️ Vídeo demonstrativo
 
 ## Autor
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/168394448?v=4" width=115><br><sub>Lorenzo Rover</sub>](https://github.com/lorenzorover) |
