@@ -2,7 +2,7 @@
 Decodificador de texto (Desafio 01) feito durante o curso Alura-One.
 <br><br>
 
-## 🛠️ Funcionalidade
+## 🛠️ Funcionalidades
 O decodificador de texto tem como funcionalidade criptografar ou descriptografar palavras e textos não muito longos.<br>
 Na função de criptografar, ela converte as vogais das palavras em outras letras. Já na função de descriptografar é o inverso.<br><br>
 Segue os parâmetros abaixo:<br>
