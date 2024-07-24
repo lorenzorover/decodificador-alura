@@ -1,17 +1,9 @@
 # Decodificador de texto
-Decodificador de texto (Desafio 01) feito durante o curso Alura-One
+Decodificador de texto (Desafio 01) feito durante o curso Alura-One.
+<br><br>
 
-## 📚 Linguagens utilizadas
-
-<img alt="Static Badge" src="https://img.shields.io/badge/JavaScript-color?color=%23F5EF01"> <br>
-<img alt="Static Badge" src="https://img.shields.io/badge/Html-color?color=%23F57301"> <br>
-<img alt="Static Badge" src="https://img.shields.io/badge/CSS-color?color=%23252CF5">
-
-## Link para o programa
-https://lorenzorover.github.io/decodificador-alura/
-
-## Funcionalidade
-O funcionamento do decodificador de texto tem como objetivo criptografar ou descriptografar palavras e textos não muito longos.<br>
+## 🛠️ Funcionalidade
+O decodificador de texto tem como funcionalidade criptografar ou descriptografar palavras e textos não muito longos.<br>
 Na função de criptografar, ela converte as vogais das palavras em outras letras. Já na função de descriptografar é o inverso.<br><br>
 Segue os parâmetros abaixo:<br>
 - a = ai;
@@ -21,9 +13,22 @@ Segue os parâmetros abaixo:<br>
 - u = ufat.
 <br>
 Além disso, o programa também possui requisitos ao digitar, não aceitando letras maiúsculas, acentos e caracteres especiais.
+<br><br>
+
+## 📚 Linguagens utilizadas
+<img alt="Static Badge" src="https://img.shields.io/badge/JavaScript-color?color=%23F5EF01"> <br>
+<img alt="Static Badge" src="https://img.shields.io/badge/Html-color?color=%23F57301"> <br>
+<img alt="Static Badge" src="https://img.shields.io/badge/CSS-color?color=%23252CF5">
+<br><br>
+
+## Link para o programa
+https://lorenzorover.github.io/decodificador-alura/
+<br><br>
 
 ## ▶️ Vídeo demonstrativo da utilização
 
 ## Autor
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/168394448?v=4" width=115><br><sub>Lorenzo Rover</sub>](https://github.com/lorenzorover) |
 | :---: |
+<br>
+Desenvolvido em julho de 2024.
