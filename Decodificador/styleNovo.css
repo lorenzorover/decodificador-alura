@@ -131,7 +131,7 @@ button {
 }
 
 .container__saida__mensagem {
-    height: 80%;
+    height: 85%;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -152,4 +152,5 @@ button {
     display: block;
     max-width: 100%;
     min-height: 67px;
+    margin-top: 32px;
 }
