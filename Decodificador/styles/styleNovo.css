@@ -103,7 +103,7 @@ button {
     padding: 32px;
 }
 
-/*  */
+/* colado aqui */
 
 
 .container__saida__limpo {
@@ -153,4 +153,12 @@ button {
     max-width: 100%;
     min-height: 67px;
     margin-top: 32px;
+}
+
+footer {
+    font-family: var(--fonte-principal);
+    padding: 24px;
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 1rem;
 }
