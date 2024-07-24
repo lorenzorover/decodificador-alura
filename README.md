@@ -8,6 +8,7 @@ Decodificador de texto (Desafio 01) feito durante o curso Alura-One
 <img alt="Static Badge" src="https://img.shields.io/badge/CSS-color?color=%23252CF5">
 
 ## Link para o programa
+https://lorenzorover.github.io/decodificador-alura/
 
 ## Funcionalidade
 O funcionamento do decodificador de texto tem como objetivo criptografar ou descriptografar palavras e textos não muito longos.<br>
