@@ -77,6 +77,7 @@ button {
     font-size: 1rem;
     color: var(--cor-principal);
     background-color: transparent;
+    padding: 24px;
 }
 
 .container__botoes__iniciais {
@@ -170,10 +171,14 @@ button:hover {
 }
 
 @media (max-width: 1000px) {
+    body {
+        height: auto;
+    }
+
     main {
         flex-direction: column;
         margin: 30px;
-        gap: 40px;
+        gap: 64px;
     }
 
     .container__entrada {
@@ -183,7 +188,10 @@ button:hover {
 
     .container__entrada__conjunto {
         margin-left: 0px;
-        height: 100%;
+    }
+
+    textarea {
+        height: 532px;
     }
 
     .container__saida {
@@ -201,5 +209,19 @@ button:hover {
 
     .mensagem__saida {
         height: 75%;
+    }
+
+    .botao__copiar {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    textarea {
+        height: 237px;
+    }
+
+    .container__botoes__iniciais {
+        flex-direction: column;
     }
 }
