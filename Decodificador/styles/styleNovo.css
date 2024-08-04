@@ -13,7 +13,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 80vh;
     box-sizing: border-box; /* Mantém todo o conteúdo dentro do body*/
     flex-wrap: wrap; /* Muda o tamanho dos itens conforme o dimensionamento da tela */
     background-color: #F3F5FC;
@@ -35,9 +35,9 @@ main {
     flex-direction: column;
 }
 
-.titulo {
-    font-size: 3rem;
-    color: var(--cor-principal);
+.logo {
+    height: 3rem;
+    width: 7.5rem;
 }
 
 .container__entrada__conjunto {
@@ -78,6 +78,7 @@ button {
     color: var(--cor-principal);
     background-color: transparent;
     padding: 24px;
+    margin-bottom: 32px;
 }
 
 .container__botoes__iniciais {
@@ -179,6 +180,10 @@ button:hover {
         flex-direction: column;
         margin: 30px;
         gap: 64px;
+    }
+
+    button {
+        margin-bottom: 0px;
     }
 
     .container__entrada {

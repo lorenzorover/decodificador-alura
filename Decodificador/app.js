@@ -54,7 +54,8 @@ function converterMensagem(mensagem, letra, novaLetra) {
 }
 
 function conferirMensagem() {
-    let mensagem = document.querySelector("textarea").value;
+    let mensagem = document.querySelector(".text-area").value;
+    mensagem = mensagem.toLocaleLowerCase();
     if (mensagem.trim() === "") { /* trim remove o espaço da mensagem apenas durante o if*/
         mostrarInicio();
     } else {
