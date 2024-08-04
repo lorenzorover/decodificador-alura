@@ -12,8 +12,9 @@ Segue os parâmetros abaixo:<br>
 - o = ober;
 - u = ufat.
 <br>
-Além disso, o programa também possui requisitos ao digitar, não aceitando letras maiúsculas, acentos e caracteres especiais.<br>
-O programa também possui um botão extra chamado "Copiar", que tem como função copiar a mensagem criptografada para o seu clipboard. Ele apenas aparecerá caso o usuário digite uma mensagem.
+<strong> ⭐ Detalhes adicionais: </strong> O programa também possui um botão extra chamado "Copiar", que tem como função copiar a mensagem criptografada para o seu clipboard. Ele apenas aparecerá caso o usuário digite uma mensagem.<br>
+Dependendo do dispositivo usado, a página será responsiva e ajustará automaticamente os itens para se adequar ao tamanho da tela, seja em celulares, tablets, notebooks ou desktops.<br><br>
+<strong> ❗ Cuidado: </strong> O programa também possui requisitos ao digitar, não aceitando letras maiúsculas, acentos e caracteres especiais.
 <br><br>
 
 ## 📚 Linguagens utilizadas
