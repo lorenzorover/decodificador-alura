@@ -29,14 +29,11 @@ https://lorenzorover.github.io/decodificador-alura/
 
 ## ▶️ Vídeo/GIFs demonstrativos
 
-https://github.com/user-attachments/assets/0287a7b8-6fcd-4487-b00f-3e2e946b5799
+https://github.com/user-attachments/assets/7bbb6f53-26d2-43c4-a09a-eee65bcb9c57
 
 <img loading="lazy" width="550" src="https://raw.githubusercontent.com/lorenzorover/decodificador-alura/main/recursos-adicionais/teste-criptografar.gif">
-
-<img loading="lazy" width="550" src="https://raw.githubusercontent.com/lorenzorover/decodificador-alura/main/recursos-adicionais/dimensionamento.gif">
-
-
-
+<img loading="lazy" width="550" src="https://raw.githubusercontent.com/lorenzorover/decodificador-alura/main/recursos-adicionais/dimensionamento.gif"> 
+<br><br>
 
 ## Autor
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/168394448?v=4" width=115><br><sub>Lorenzo Rover</sub>](https://github.com/lorenzorover) |
