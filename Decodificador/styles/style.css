@@ -3,6 +3,7 @@
 :root {
     --fonte-principal: "Inter", sans-serif;
     --cor-principal: #0A3871;
+    --cor-hover: #3e90f3;
     --cor-paragrafo-saida: #495057;
 }
 
@@ -12,41 +13,40 @@
 }
 
 body {
-    height: 100vh; /* Altura da tela viewport (mantém o tamanho do conteúdo de acordo com o dispositivo) */
+    height: 80vh;
     box-sizing: border-box; /* Mantém todo o conteúdo dentro do body*/
-    background-color: #F3F5FC;
     flex-wrap: wrap; /* Muda o tamanho dos itens conforme o dimensionamento da tela */
+    background-color: #F3F5FC;
     font-family: var(--fonte-principal);
+    font-weight: 400;
 }
 
 main {
-    padding: 3%;
+    margin: 40px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between; /* Espaçamento */
     height: 100%;
+    gap: 80px; 
 }
 
 .container__entrada {
+    width: 60%;
+    height: auto;
     display: flex;
-    box-sizing: border-box;
     flex-direction: column;
-    width: 100%;
 }
 
-.titulo {
-    font-size: 3rem;
-    color: var(--cor-principal);
+.logo {
+    height: 3rem;
+    width: 7.5rem;
 }
 
 .container__entrada__conjunto {
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 80px;
     margin-left: 200px;
-    margin-right: 80px;
-    margin-bottom: 32px;
-    width: auto;
-    height: 100%;
 }
 
 textarea {
@@ -56,7 +56,7 @@ textarea {
     font-size: 2rem;
     background-color: transparent;
     outline: none;
-    /* border: none; */
+    border: none;
     color: var(--cor-principal);
 }
 
@@ -72,17 +72,20 @@ textarea {
 button {
     border: 1px solid var(--cor-principal);
     height: 67px;
-    width: 328px;
+    width: 100%;
     text-align: center;
     border-radius: 24px;
     font-size: 1rem;
     color: var(--cor-principal);
     background-color: transparent;
+    padding: 24px;
+    margin-bottom: 32px;
+    cursor: pointer;
 }
 
 .container__botoes__iniciais {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     justify-content: center;
     gap: 28px;
 }
@@ -98,12 +101,15 @@ button {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 30%;
+    width: 27%;
     background-color: white;
     border-radius: 32px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 32px;
 }
+
+/* colado aqui */
+
 
 .container__saida__limpo {
     height: 100%;
@@ -117,10 +123,11 @@ button {
 }
 
 .mensagem__nao__encontrado {
+    margin-top: 32px;
+    font-weight: 700;
     font-weight: bold;
     font-size: 1.5rem;
     color: #343A40;
-    margin-top: 32px;
 }
 
 .paragrafo__mensagem {
@@ -130,26 +137,98 @@ button {
 }
 
 .container__saida__mensagem {
-    height: 100%;
+    height: 85%;
     display: flex;
-    margin-bottom: 32px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .mensagem__saida {
-    height: 88%;
+    height: 100%;
+    width: 100%;
     font-size: 1.5rem;
     color: var(--cor-paragrafo-saida);
-    margin-bottom: 32px;
     overflow-y: auto;
     word-wrap: break-word;
 }
 
 .botao__copiar {
-    /* margin-top: auto; */
     margin-left: auto;
     margin-right: auto;
     display: block;
     max-width: 100%;
     min-height: 67px;
+    margin-top: 32px;
+}
 
+footer {
+    padding: 24px;
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 1rem;
+}
+
+button:active {
+    background-color: var(--cor-hover);
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 30px;
+        gap: 64px;
+    }
+
+    button {
+        margin-bottom: 0px;
+    }
+
+    .container__entrada {
+        width: 100%;
+        height: 55%;
+    }
+
+    .container__entrada__conjunto {
+        margin-left: 0px;
+    }
+
+    textarea {
+        height: 532px;
+    }
+
+    .container__saida {
+        height: 40%;
+        width: 100%;
+    }
+
+    .desenho__pessoa {
+        display: none;
+    }
+
+    .mensagem__nao__encontrado {
+        margin-top: 0px;
+    }
+
+    .mensagem__saida {
+        height: 75%;
+    }
+
+    .botao__copiar {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    textarea {
+        height: 237px;
+    }
+
+    .container__botoes__iniciais {
+        flex-direction: column;
+    }
 }
