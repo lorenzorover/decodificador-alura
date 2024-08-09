@@ -9,7 +9,7 @@ function criptografar() {
     mensagem = converterMensagem(mensagem, 'o', 'ober');
     mensagem = converterMensagem(mensagem, 'u', 'ufat');
 
-    document.getElementById("mensagemConvertida").textContent = mensagem;
+    document.getElementById("mensagem-convertida").textContent = mensagem;
 }
 
 function descriptografar() {
@@ -21,26 +21,26 @@ function descriptografar() {
     mensagem = converterMensagem(mensagem, 'ober', 'o');
     mensagem = converterMensagem(mensagem, 'ufat', 'u');
 
-    document.getElementById("mensagemConvertida").textContent = mensagem;
+    document.getElementById("mensagem-convertida").textContent = mensagem;
 }
 
 function mostrarCriptografia() {
     document.getElementById("saidaLimpo").style.display = "none";
-    document.getElementById("saidaMensagem").style.display = "block";
+    document.getElementById("saidaMensagem").style.display = "flex";
 }
 
 function copiarMensagem() {
     navigator.permissions.query({ name: "clipboard-write" }).then((result) => {
         if (result.state === "granted" || result.state === "prompt") {
 
-            let copiarTexto = document.getElementById("mensagemConvertida").textContent;
+            let copiarTexto = document.getElementById("mensagem-convertida").textContent;
             navigator.clipboard.writeText(copiarTexto);
         }
       });
 }
 
 function mostrarInicio() {
-    document.getElementById("mensagemConvertida").textContent = "";
+    document.getElementById("mensagem-convertida").textContent = "";
 
     document.getElementById("saidaMensagem").style.display = "none";
     document.getElementById("saidaLimpo").style.display = "block";

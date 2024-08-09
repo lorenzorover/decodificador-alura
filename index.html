@@ -10,7 +10,7 @@
 <body>
     <header> <!-- Menu ou Logotipo --> </header>
     <main>
-        <div class="container__entrada">
+        <section class="container__entrada">
             <img src="./Decodificador/img/logo-alura.png" alt="Logo da Alura" class="logo">
             <div class="container__entrada__conjunto">
                 <textarea type="text" class="text-area" placeholder="Digite aqui..."></textarea>
@@ -19,23 +19,24 @@
                     Apenas letras minúsculas e sem acento.
                 </p>
                 <div class="container__botoes__iniciais">
-                    <button onclick="criptografar()" class="botao__criptografar">Criptografar</button>
-                    <button onclick="descriptografar()" class="botao__descriptografar">Descriptografar</button>
+                    <button onclick="criptografar()" class="btn__criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="btn__descriptografar">Descriptografar</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container__saida">
+        <section class="container__saida">
             <div id="saidaLimpo" class="container__saida__limpo">
                 <img src="./Decodificador/img/pessoa-com-lupa.png" alt="Desenho de pessoa com lupa" class="desenho__pessoa">
                 <h2 class="mensagem__nao__encontrado">Nenhuma mensagem encontrada</h2>
                 <p class="paragrafo__mensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
             <div id="saidaMensagem" class="container__saida__mensagem">
-                <p id="mensagemConvertida" class="mensagem__saida"></p>
-                <button onclick="copiarMensagem()" class="botao__copiar">Copiar</button>
+                <textarea type="text" id="mensagem-convertida" class="mensagem__convertida" readonly></textarea>
+                <button onclick="copiarMensagem()" class="btn__copiar">Copiar</button>
             </div>
-        </div>
+            
+        </section>
     </main>
     <footer> 
         Desenvolvido por Lorenzo Rover <br> Release date: jul/2024 <br> Código do projeto: 

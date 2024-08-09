@@ -5,6 +5,7 @@
     --cor-principal: #0A3871;
     --cor-hover: #3e90f3;
     --cor-paragrafo-saida: #495057;
+    --cor-botao-secundario: #D8DFE8;
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 body {
-    height: 80vh;
+    height: 100vh;
     box-sizing: border-box; /* Mantém todo o conteúdo dentro do body*/
     flex-wrap: wrap; /* Muda o tamanho dos itens conforme o dimensionamento da tela */
     background-color: #F3F5FC;
@@ -51,13 +52,19 @@ main {
 
 textarea {
     resize: none;
-    width: 100%;
+    width: auto;
     height: 100%;
     font-size: 2rem;
     background-color: transparent;
     outline: none;
-    border: none;
     color: var(--cor-principal);
+    text-transform: lowercase;
+}
+
+.text-area {
+    padding: 10px;
+    border: 1px solid var(--cor-principal);
+    border-radius: 24px;
 }
 
 .mensagem__aviso {
@@ -65,7 +72,7 @@ textarea {
     align-items: center;
     color: #495057;
     gap: 8px;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin: 16px 0;
 }
 
@@ -73,14 +80,23 @@ button {
     border: 1px solid var(--cor-principal);
     height: 67px;
     width: 100%;
+    max-width: 327px;
     text-align: center;
     border-radius: 24px;
     font-size: 1rem;
-    color: var(--cor-principal);
-    background-color: transparent;
     padding: 24px;
-    margin-bottom: 32px;
     cursor: pointer;
+}
+
+.btn__criptografar {
+    color: white;
+    background-color: var(--cor-principal);
+}
+
+.btn__descriptografar,
+.btn__copiar {
+    color: var(--cor-principal);
+    background-color: var(--cor-botao-secundario);
 }
 
 .container__botoes__iniciais {
@@ -88,11 +104,7 @@ button {
     justify-content: space-between;
     justify-content: center;
     gap: 28px;
-}
-
-.botao__criptografar {
-    color: white;
-    background-color: var(--cor-principal);
+    margin-bottom: 32px;
 }
 
 .container__saida {
@@ -100,16 +112,15 @@ button {
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    align-items: center;
+    height: auto;
     width: 27%;
     background-color: white;
     border-radius: 32px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 32px;
+    gap: 32px;
 }
-
-/* colado aqui */
-
 
 .container__saida__limpo {
     height: 100%;
@@ -137,29 +148,20 @@ button {
 }
 
 .container__saida__mensagem {
-    height: 85%;
+    height: 100%;
     display: flex;
-    box-sizing: border-box;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.mensagem__saida {
+.mensagem__convertida {
+    border: none;
     height: 100%;
     width: 100%;
     font-size: 1.5rem;
     color: var(--cor-paragrafo-saida);
-    overflow-y: auto;
-    word-wrap: break-word;
-}
-
-.botao__copiar {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 100%;
-    min-height: 67px;
-    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 footer {
@@ -190,11 +192,18 @@ button:active {
 
     .container__entrada {
         width: 100%;
-        height: 55%;
+    }
+
+    .container__entrada__conjunto {
+        height: 450px;
     }
 
     .container__entrada__conjunto {
         margin-left: 0px;
+    }
+    
+    .container__saida__mensagem {
+        height: 300px;
     }
 
     textarea {
@@ -228,7 +237,12 @@ button:active {
         height: 237px;
     }
 
+    .container__entrada__conjunto {
+        height: 500px;
+    }
+
     .container__botoes__iniciais {
         flex-direction: column;
+        align-items: center;
     }
 }
