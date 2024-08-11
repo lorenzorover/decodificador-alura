@@ -15,8 +15,8 @@
 
 body {
     height: 100vh;
-    box-sizing: border-box; /* Mantém todo o conteúdo dentro do body*/
-    flex-wrap: wrap; /* Muda o tamanho dos itens conforme o dimensionamento da tela */
+    box-sizing: border-box;
+    flex-wrap: wrap;
     background-color: #F3F5FC;
     font-family: var(--fonte-principal);
     font-weight: 400;
@@ -25,7 +25,7 @@ body {
 main {
     margin: 40px;
     display: flex;
-    justify-content: space-between; /* Espaçamento */
+    justify-content: space-between;
     height: 100%;
     gap: 80px; 
 }
@@ -176,6 +176,9 @@ button:active {
 }
 
 @media (max-width: 1000px) {
+    
+    /* Dimensionamento para tablet */
+
     body {
         height: auto;
     }
@@ -233,6 +236,9 @@ button:active {
 }
 
 @media (max-width: 600px) {
+
+    /* Dimensionamento para celular */
+
     textarea {
         height: 237px;
     }
